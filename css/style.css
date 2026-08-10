@@ -123,22 +123,22 @@ section { padding: 88px 0; }
 }
 .brand img { height: 34px; width: auto; }
 .brand-text {
-  font-family: var(--font-serif);
-  font-size: 1.05rem;
+  font-family: "Lexend Tera", var(--font-sans);
+  font-size: 0.92rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-  line-height: 1.1;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 .brand-text span {
   display: block;
-  font-family: var(--font-sans);
-  font-size: 0.62rem;
-  font-weight: 500;
-  letter-spacing: 0.16em;
+  font-family: "Lexend Tera", var(--font-sans);
+  font-size: 0.56rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-ink-faint);
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 .nav-links {
