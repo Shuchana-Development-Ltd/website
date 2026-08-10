@@ -128,7 +128,7 @@ section { padding: 88px 0; }
   font-weight: 600;
   letter-spacing: 0.02em;
   line-height: 1.1;
-   text-transform: uppercase;
+  text-transform: uppercase;
 }
 .brand-text span {
   display: block;
@@ -568,7 +568,7 @@ section { padding: 88px 0; }
   font-size: 1.6rem;
 }
 
-/* ---- Ongoing projects: status tags, unit tables, progress ---- */
+/* ---- Project status tags ---- */
 .tag.status-open {
   color: #3f7d52;
   border-color: rgba(63, 125, 82, 0.35);
@@ -580,55 +580,33 @@ section { padding: 88px 0; }
   background: #f2efe7;
 }
 
-.progress-track {
-  height: 6px;
-  border-radius: 4px;
-  background: var(--color-line);
-  overflow: hidden;
-  margin: 14px 0 6px;
+/* ---- Project cards: photo/coming-soon + brochure ---- */
+.project-photo-link {
+  display: block;
+  cursor: pointer;
 }
-.progress-fill {
-  height: 100%;
-  background: var(--color-accent);
-  border-radius: 4px;
-}
-.progress-label {
-  font-size: 0.76rem;
-  color: var(--color-ink-faint);
-}
-
-.unit-table {
+.project-photo-link img {
   width: 100%;
-  border-collapse: collapse;
-  margin: 16px 0;
-  font-size: 0.85rem;
+  aspect-ratio: 4/3;
+  object-fit: cover;
 }
-.unit-table th,
-.unit-table td {
-  text-align: left;
-  padding: 9px 10px;
-  border-bottom: 1px solid var(--color-line);
-}
-.unit-table th {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--color-ink-faint);
+.placeholder-img.coming-soon-emphasis::after {
+  font-size: 0.95rem;
   font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  padding: 10px 20px;
+  color: var(--color-accent-dark);
 }
-.unit-table td { color: var(--color-ink-soft); }
-.unit-table td.status-available { color: #3f7d52; font-weight: 600; }
-.unit-table td.status-reserved { color: var(--color-ink-faint); }
-.unit-table td.status-sold { color: var(--color-ink-faint); text-decoration: line-through; }
 
-.ongoing-card .card-body { padding: 26px; }
-.ongoing-card .card-actions {
+.project-card .card-body { padding: 26px; }
+.project-card .card-actions {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
   margin-top: 18px;
 }
-.ongoing-card .card-actions .btn { padding: 11px 20px; font-size: 0.88rem; }
+.project-card .card-actions .btn { padding: 11px 20px; font-size: 0.88rem; }
 
 /* ---- Utility ---- */
 .text-center { text-align: center; }
