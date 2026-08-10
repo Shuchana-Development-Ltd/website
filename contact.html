@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact &amp; Inquiries | Shuchana Development Limited</title>
+<meta name="description" content="Send an inquiry to Shuchana Development Limited about commercial or residential real estate projects in Dhaka, Mymensingh, or Feni." />
+<link rel="icon" type="image/png" href="assets/images/icon-32.png" />
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo-icon-black.png" alt="Shuchana Development Limited" />
+      <span class="brand-text">Shuchana<span>Development Limited</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="ongoing-projects.html">Ongoing Projects</a>
+      <a href="projects.html">Completed Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-outline">Send an Inquiry</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+    <span class="eyebrow">Get In Touch</span>
+    <h1>Tell us about your project.</h1>
+    <p class="lede">Whether you're interested in a commercial space, a residential unit, or just want to learn more about a development, send us the details below and we'll get back to you.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container contact-grid">
+
+    <div>
+      <div class="info-card">
+        <h4>Email</h4>
+        <a href="mailto:shuchana.development@gmail.com">shuchana.development@gmail.com</a>
+      </div>
+      <div class="info-card">
+        <h4>Service Areas</h4>
+        <p>Dhaka &middot; Mymensingh &middot; Feni, Bangladesh</p>
+      </div>
+      <div class="info-card">
+        <h4>Response Time</h4>
+        <p>We aim to respond to inquiries within 1&ndash;2 business days.</p>
+      </div>
+    </div>
+
+    <div class="form-wrap">
+      <!--
+        This form submits via FormSubmit.co directly to
+        shuchana.development@gmail.com — no backend server required,
+        which makes it compatible with static GitHub Pages hosting.
+
+        IMPORTANT (one-time setup): the first submission triggers a
+        confirmation email from FormSubmit to shuchana.development@gmail.com.
+        Someone must click "Confirm" in that email before future
+        submissions will be delivered. See the README for details.
+      -->
+      <form
+        class="inquiry-form"
+        action="https://formsubmit.co/shuchana.development@gmail.com"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="New inquiry — Shuchana Development website" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="true" />
+        <input type="hidden" name="_next" id="formNext" value="thank-you.html" />
+        <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" />
+
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="Name" required />
+          </div>
+          <div class="field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="Phone" placeholder="+880 1XXX-XXXXXX" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="Email" required />
+          </div>
+          <div class="field">
+            <label for="city">City of Interest</label>
+            <select id="city" name="City of Interest">
+              <option value="Dhaka">Dhaka</option>
+              <option value="Mymensingh">Mymensingh</option>
+              <option value="Feni">Feni</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="type">Space Type</label>
+            <select id="type" name="Space Type">
+              <option value="Residential">Residential</option>
+              <option value="Commercial">Commercial</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="budget">Approximate Budget (optional)</label>
+            <input type="text" id="budget" name="Approximate Budget" placeholder="e.g. BDT 50,00,000" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="message">Message *</label>
+          <textarea id="message" name="Message" required placeholder="Tell us what you're looking for..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Inquiry</button>
+        <p class="field-hint">By submitting, your message is sent directly to shuchana.development@gmail.com.</p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo-full-white.png" alt="Shuchana Development Limited" />
+        <p>Designing and building commercial and residential spaces across Dhaka, Mymensingh, and Feni, Bangladesh.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="ongoing-projects.html">Ongoing Projects</a>
+        <a href="projects.html">Completed Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:shuchana.development@gmail.com">shuchana.development@gmail.com</a>
+        <p>Dhaka &middot; Mymensingh &middot; Feni, Bangladesh</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Shuchana Development Limited. All rights reserved.</span>
+      <span>Site content is placeholder and pending final review.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
