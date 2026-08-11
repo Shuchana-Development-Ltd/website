@@ -101,6 +101,13 @@ section { padding: 88px 0; }
 .btn-outline:hover { background: var(--color-ink); color: #fff; }
 .btn-outline.on-dark { border-color: rgba(255,255,255,0.55); color: #fff; }
 .btn-outline.on-dark:hover { background: #fff; color: var(--color-dark); }
+.btn-disabled {
+  background: transparent;
+  border-color: var(--color-line);
+  color: var(--color-ink-soft);
+  cursor: not-allowed;
+  pointer-events: none;
+}
 
 /* ---- Header / Nav ---- */
 .site-header {
