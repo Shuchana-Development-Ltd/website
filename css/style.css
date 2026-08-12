@@ -485,6 +485,13 @@ section { padding: 88px 0; }
   align-items: center;
 }
 @media (max-width: 880px) { .about-grid { grid-template-columns: 1fr; } }
+.leader-photo {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
 .timeline { border-left: 2px solid var(--color-line); padding-left: 24px; }
 .timeline-item { margin-bottom: 28px; position: relative; }
 .timeline-item::before {
