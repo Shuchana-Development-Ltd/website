@@ -615,12 +615,14 @@ section { padding: 88px 0; }
   color: var(--color-accent-dark);
 }
 
-.project-card .card-body { padding: 26px; }
+.card.project-card { display: flex; flex-direction: column; height: 100%; }
+.project-card .card-body { padding: 26px; display: flex; flex-direction: column; flex: 1; }
 .project-card .card-actions {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-  margin-top: 18px;
+  margin-top: auto;
+  padding-top: 18px;
 }
 .project-card .card-actions .btn { padding: 11px 20px; font-size: 0.88rem; }
 
