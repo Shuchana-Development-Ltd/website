@@ -497,6 +497,36 @@ section { padding: 88px 0; }
 }
 .timeline-item h4 { margin-bottom: 4px; }
 
+/* ---- Leadership bios ---- */
+.leader-bio p:last-child { margin-bottom: 0; }
+
+/* ---- Consultants ---- */
+.consultant-list { display: flex; flex-direction: column; }
+.consultant-item {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 32px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+.consultant-item:first-child { padding-top: 0; }
+.consultant-item:last-child { border-bottom: none; padding-bottom: 0; }
+.consultant-role {
+  display: block;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent-dark);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.consultant-name { font-size: 1.45rem; margin: 0; }
+.consultant-details p { font-size: 0.95rem; margin-bottom: 6px; }
+.consultant-details p:last-child { margin-bottom: 0; }
+@media (max-width: 720px) {
+  .consultant-item { grid-template-columns: 1fr; gap: 8px; }
+}
+
 /* ---- Contact page / form ---- */
 .contact-grid {
   display: grid;
